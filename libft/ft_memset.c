@@ -6,7 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:27 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/24 12:02:27 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 15:08:38 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
+void	*memset(void *str, int c, size_t n);
