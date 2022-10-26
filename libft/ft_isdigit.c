@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:12 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 12:49:07 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 14:24:36 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 */
 int	ft_isdigit(int c)
 {
-	if (c < '0' || c > '9')
-		return (0);
-	return (1);
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
 /*
 int	main(int argc, char **argv)

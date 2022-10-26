@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:03 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 12:48:37 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 14:24:04 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,28 @@
 #include <ctype.h>
 #include <stdio.h>
 */
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+
 int	ft_isalnum(int c)
 {
-	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < '0' || c > '9'))
-		return (0);
-	return (1);
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
+}
+
+int	ft_isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	return (0);
+}
+
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
 /*
 int	main(int argc, char **argv)

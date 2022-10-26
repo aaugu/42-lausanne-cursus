@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:10 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 12:49:00 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 14:24:47 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 */
 int	ft_isascii(int c)
 {
-	if (c < 0 || c > 127)
-		return (0);
-	return (1);
+	if (c >= 0 || c <= 127)
+		return (1);
+	return (0);
 }
 /*
 int	main(int argc, char **argv)

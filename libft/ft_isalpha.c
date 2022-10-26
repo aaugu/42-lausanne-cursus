@@ -6,21 +6,21 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:07 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 12:48:42 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 14:23:36 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include <ctype.h>
 #include <stdio.h>
-*/
+#include <stdlib.h>
+
 int	ft_isalpha(int c)
 {
-	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z'))
-		return (0);
-	return (1);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	return (0);
 }
-/*
+
 int	main(int argc, char **argv)
 {
 	if (argc != 2)
@@ -32,4 +32,3 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
-*/
