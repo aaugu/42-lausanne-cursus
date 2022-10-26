@@ -6,13 +6,12 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:44:52 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 12:53:38 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 16:46:40 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include <unistd.h>
-*/
+
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;

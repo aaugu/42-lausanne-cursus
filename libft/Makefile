@@ -6,27 +6,38 @@
 #    By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 12:03:36 by aaugu             #+#    #+#              #
-#    Updated: 2022/10/25 16:19:26 by aaugu            ###   ########.fr        #
+#    Updated: 2022/10/26 17:54:01 by aaugu            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# SRCS	= main.c ft.c ft_compare.c ft_parsing.c parsing_dict.c triplet_slicer.c
-# OBJS	= ${SRCS:.c=.o}
-# NAME	= rush-02
-# CC		= cc
-# CFLAGS	= -Wall -Wextra -Werror
-# RM		= rm -f
+NAME = libft.a
 
-# .c.o:
-# 			${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c  ft_isprint.c \
+ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c  ft_strlcpy.c \
+ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c \
+ft_memchr.c ft_memcmp.c ft_strnstr ft_atoi.c ft_calloc.c ft_strdup.c \
+ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c \
+ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
-# ${NAME}:	${OBJS}
-# 			${CC} -o ${NAME} ${OBJS}
+OBJS = ${SRCS:.c=.o}
+GCC = gcc
+CFLAGS = -Wall -Wextra -Werror
+RM = rm -f
 
-# clean:
-# 			${RM} ${OBJS}
+.c.o:
+			${GCC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
-# fclean:		clean
-# 			${RM} ${NAME}
+${NAME}:	${OBJS}
+			ar rc ${NAME} ${OBJS}
 
-# .PHONY:		clean fclean
+all: 		${NAME}
+
+clean:
+			${RM} ${OBJS}
+
+fclean: 	clean
+			${RM} ${NAME}
+
+re: 		fclean all
+
+.PHONY:		all clean fclean re

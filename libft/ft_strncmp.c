@@ -6,14 +6,14 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:03:22 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 13:50:22 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 17:56:56 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 #include <stdio.h>
 #include <string.h>
-*/
+
 int ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	unsigned int	i;
@@ -25,7 +25,7 @@ int ft_strncmp(const char *str1, const char *str2, size_t n)
 		i++;
 	return (s1[i] - s2[i]);
 }
-/*
+
 int	main(void)
 {
 	char	s1[] = "Hello !";

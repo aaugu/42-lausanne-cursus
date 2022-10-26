@@ -6,12 +6,11 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:12:57 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 13:24:16 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 16:40:32 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -43,7 +42,7 @@ void	ft_putchar_fd(char c, int fd)
 }
 
 int	main(int argc, char **argv)
-{	
+{
 	(void) argc;
 	ft_putnbr_fd(atoi(argv[1]), 1);
 	ft_putchar_fd('\n', 1);

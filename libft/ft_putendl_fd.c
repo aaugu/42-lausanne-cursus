@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:53:35 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 12:56:01 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 16:42:00 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,11 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 	(void) argc;
 	ft_putendl_fd(argv[1], 1);
 	return (0);
 }
+*/

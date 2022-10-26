@@ -6,14 +6,13 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:03:27 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 14:09:07 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 16:38:50 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include <ctype.h>
 #include <stdio.h>
-*/
+
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
