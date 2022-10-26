@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:07 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/26 14:23:36 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 14:25:53 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 	if (argc != 2)
@@ -32,3 +32,4 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
+*/
