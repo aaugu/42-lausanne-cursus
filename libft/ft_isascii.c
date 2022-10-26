@@ -6,21 +6,20 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:10 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/26 14:24:47 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 14:47:50 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include <ctype.h>
 #include <stdio.h>
-*/
+
 int	ft_isascii(int c)
 {
 	if (c >= 0 || c <= 127)
 		return (1);
 	return (0);
 }
-/*
+
 int	main(int argc, char **argv)
 {
 	if (argc != 2)
@@ -32,4 +31,3 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
-*/
