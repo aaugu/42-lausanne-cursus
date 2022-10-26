@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:27 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/26 15:49:25 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/26 15:55:42 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memset(void *str, int c, size_t n)
 		s[n] = c;
 	return (str);
 }
-
+/*
 int	main(void)
 {
 	char	str1[30] = "Hello I want cookies";
@@ -36,3 +36,4 @@ int	main(void)
 	printf("%s\n", str2);
 	return (0);
 }
+*/
