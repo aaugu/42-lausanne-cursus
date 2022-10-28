@@ -6,44 +6,35 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:12:57 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/26 16:40:32 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 16:20:18 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-
-void	ft_putchar_fd(char c, int fd);
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (n == -2147483648)
-	{
-		write(1, "-2147483648", 11);
-	}
-	if (n < 0 && n != -2147483648)
+	long	nb;
+
+	nb = (long)n;
+	if (nb < 0)
 	{
 		ft_putchar_fd('-', fd);
-		n = -n;
+		nb = -nb;
 	}
-	if (n > 9)
+	if (nb >= 10)
 	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putnbr_fd(n % 10, fd);
+		ft_putnbr_fd(nb / 10, fd);
+		ft_putnbr_fd(nb % 10, fd);
 	}
-	else if (n >= 0 && n < 10)
-		ft_putchar_fd(n + 48, fd);
+	else if (nb >= 0 && nb < 10)
+		ft_putchar_fd(nb + 48, fd);
 }
-
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
-
+/*
 int	main(int argc, char **argv)
 {
 	(void) argc;
-	ft_putnbr_fd(atoi(argv[1]), 1);
-	ft_putchar_fd('\n', 1);
+	ft_putnbr_fd(atoi(argv[1]), 2);
+	ft_putchar_fd('\n', 2);
 }
+*/

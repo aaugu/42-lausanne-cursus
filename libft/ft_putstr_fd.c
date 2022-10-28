@@ -6,18 +6,18 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:44:52 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/26 16:46:40 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:50:36 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		write(fd, &s[i], 1);
 		i++;

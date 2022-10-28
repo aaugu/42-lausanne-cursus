@@ -6,14 +6,12 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:01:56 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 13:54:17 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 16:08:05 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdlib.h>
-#include <stdio.h>
-*/
+#include "libft.h"
+
 int	ft_atoi(const char *str)
 {
 	int	i;
@@ -23,6 +21,8 @@ int	ft_atoi(const char *str)
 	i = 0;
 	sign = 1;
 	result = 0;
+	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
