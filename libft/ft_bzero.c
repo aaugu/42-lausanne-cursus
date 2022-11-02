@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:24:51 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/28 15:06:17 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/31 10:07:17 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
-	char    *str;
+	char	*str;
 
 	i = 0;
 	str = (char *)s;
